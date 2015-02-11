@@ -6,7 +6,9 @@ if (!empty($_GET["page"])){
 	{$page=0;
 	}
 switch ($page) {
-
+case 0:
+	include_once('pages/connexion.inc.php');
+	break;
 case 1:
 	include_once('pages/catalogue.inc.php');
 	break;
