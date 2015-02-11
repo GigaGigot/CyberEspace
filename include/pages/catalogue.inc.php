@@ -1,0 +1,1 @@
+<img class="jeux" alt="icone d'un jeux" src="image/jeu1.jpg" onclick="grossissement()">
