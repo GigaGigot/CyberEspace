@@ -1,7 +1,7 @@
 <?php
 class Jeu{
 	private $id;
-	private $intitulé;
+	private $intitule;
 	private $solo;
 	private $multi;
 	
@@ -15,7 +15,7 @@ class Jeu{
 		foreach($donnees as $attribut => $valeur){
 			switch($attribut){
 				case 'id' : $this->setJeu_id($valeur); break;
-				case 'intitulé' : $this->setJeu_intitulé($valeur); break;
+				case 'intitule' : $this->setJeu_intitule($valeur); break;
 				case 'solo' : $this->setJeu_solo($valeur); break;
 				case 'multi' : $this->setJeu_multi($valeur); break;
 			}
@@ -26,8 +26,8 @@ class Jeu{
 		$this->id = $valeur;
 	}
 	
-	public function setJeu_intitulé($valeur){
-		$this->intitulé = $valeur;
+	public function setJeu_intitule($valeur){
+		$this->intitule = $valeur;
 	}
     
 	public function setJeu_solo($valeur){
@@ -42,8 +42,8 @@ class Jeu{
 		return $this->id;
 	}
 	
-	public function getJeu_intitulé(){
-		return $this->intitulé;
+	public function getJeu_intitule(){
+		return $this->intitule;
 	}
     
 	public function getJeu_solo(){

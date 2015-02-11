@@ -8,7 +8,7 @@ class JeuManager{
 	
 	public function getAllJeux(){
 		$listeJeux = array();
-		$sql = 'SELECT intitulé, solo, multi FROM jeu';
+		$sql = 'SELECT * FROM jeu';
 		$req = $this->db->prepare($sql);
 		$req->execute();
 		
@@ -16,7 +16,6 @@ class JeuManager{
 			$listeJeux[] = new Jeu($jeu);
 		}
 		$req->closeCursor();
-		
 		return $listeJeux;
 		
 	}

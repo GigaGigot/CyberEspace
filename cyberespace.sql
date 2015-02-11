@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 11 Février 2015 à 16:49
+-- Généré le :  Mer 11 Février 2015 à 17:20
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `jeu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `intitulé` varchar(30) NOT NULL,
+  `intitule` varchar(30) NOT NULL,
   `solo` tinyint(1) NOT NULL,
   `multi` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `jeu` (
 -- Contenu de la table `jeu`
 --
 
-INSERT INTO `jeu` (`id`, `intitulé`, `solo`, `multi`) VALUES
+INSERT INTO `jeu` (`id`, `intitule`, `solo`, `multi`) VALUES
 (1, 'Bataille Navale', 1, 1),
 (2, 'Président', 0, 1),
 (3, 'Belote', 0, 1),
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT,
   `pseudo` varchar(30) NOT NULL,
   `mdp` varchar(50) NOT NULL,
-  `crédit` int(11) DEFAULT NULL,
+  `credit` int(11) DEFAULT NULL,
   PRIMARY KEY (`idUtilisateur`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
