@@ -1,9 +1,9 @@
 .jeux {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-bottom: 10px;
-    border: 3px solid #659bb7;
     text-decoration: none;
+    transition-duration: 1s;
 }
 
 .jeux p {
