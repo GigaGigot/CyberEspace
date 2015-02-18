@@ -11,12 +11,12 @@ $jeux = $jeuManager->getAllJeux();
 //echo "<p id=\"utilisateur\">Utilisateur: ".$user->getPseudo()." </p>";
 foreach($jeux as $jeu){
     ?>
-<a class="jeux" href="">
+<div class="jeux">
     <?php
     echo "<img class='jeux' alt='icone d'un jeux' src='image/jeu".$jeu->getJeu_id().".png'>";
     echo "<p>".$jeu->getJeu_intitule()."</p>";
     ?>
-</a>
+</div>
 <?php
 }
 ?>
