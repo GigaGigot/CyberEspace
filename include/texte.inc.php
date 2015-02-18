@@ -16,7 +16,10 @@ case 2:
 	include_once('pages/tournoi.inc.php');
 	break;
 case 3:
-    include_once('pages/jeu.inc.php');
+    include_once('pages/jeuSolo.inc.php');
+    break;
+case 4:
+    include_once('pages/jeuMulti.inc.php');
     break;
 
 default : 	include_once('pages/accueil.inc.php');
