@@ -22,5 +22,5 @@ function reduction(){
 function option(){
     estClique = true;
     $(this).append("<input class='solo' type='sumbit' value='Solo' onclick=\"location.href='index.php?page=3'\">");
-    $(this).append("<input class='multi' type='sumbit' value='Multi' onclick=\"location.href='index.php?page=3'\">")
+    $(this).append("<input class='multi' type='sumbit' value='Multi' onclick=\"location.href='index.php?page=4'\">")
 }

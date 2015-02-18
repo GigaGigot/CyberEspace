@@ -43,16 +43,19 @@
 p {
     text-align: center;
     margin-top: 15%;
+    color: white;
 }
 
 body {
-    background-color: rgba(179, 215, 224, 0.25);   
+    background-image: url(../image/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
     font-size: 50px;
-    color: #15529a;
-    background: #d6d6f2;
+    color : white;
+    text-align: center;
 }
 
 #utilisateur{
@@ -62,4 +65,35 @@ h1 {
 
 .co{
     text-align: center;   
+}
+.jeu {
+    position : absolute;
+    width: 45%;
+    height: 78%;
+    margin-left: 2%;
+    border-radius: 10%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.chat {
+    position: absolute;
+    width: 46%;
+    margin-left: 50%;
+    height: 40%;
+    border-radius: 5%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.boutik {
+    position: absolute;
+    width: 46%;
+    margin-left: 50%;
+    margin-top: 20%;
+    height: 35%;
+    border-radius: 5%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+label {
+    color: white;
 }
