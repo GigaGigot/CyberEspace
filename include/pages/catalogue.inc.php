@@ -2,13 +2,20 @@
 
 
 <?php
-$db = new MyPdo();
+$db = new Mypdo();
 $jeuManager = new JeuManager($db);
 $jeux = $jeuManager->getAllJeux();
 
 foreach($jeux as $jeu){
-    echo $jeu->getJeu_intitule();
+    ?>
+<a class="jeux" href="">
+    <?php
+    echo "<img alt='icone d'un jeux' src='image/jeu".$jeu->getJeu_id().".png'>";
+    echo "<p>".$jeu->getJeu_intitule()."</p>";
+    ?>
+</a>
+<?php
 }
 ?>
-<img class="jeux" alt="icone d'un jeux" src="image/jeu1.jpg">
+
 

@@ -1,4 +1,19 @@
 .jeux {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #659bb7;
+    text-decoration: none;
+}
+
+.jeux p {
+    color: #05054d;
+    margin-bottom: 0;
+    margin-top: -5px;
+    background-color: #659bb7;
+}
+
+.jeux img{
     width : 150px;
     height : 150px;
 }
@@ -6,4 +21,14 @@
 p {
     text-align: center;
     margin-top: 15%;
+}
+
+body {
+    background-color: rgba(179, 215, 224, 0.25);   
+}
+
+h1 {
+    font-size: 50px;
+    color: #15529a;
+    background: #d6d6f2;
 }
