@@ -12,7 +12,7 @@ class UtilisateurManager{
 		$requete = $this->db->prepare($sql);
 		$requete->execute();
 		
-		while($personne = $requete->fetch(PDO::FETCH_ASSOC)){
+		while($utilisateur = $requete->fetch(PDO::FETCH_ASSOC)){
 			$listeUtilisateurs[] = new Utilisateur($utilisateur);
 		}
 		$requete->closeCursor();
