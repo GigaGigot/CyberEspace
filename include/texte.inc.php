@@ -12,6 +12,9 @@ case 0:
 case 1:
 	include_once('pages/catalogue.inc.php');
 	break;
+case 2:
+	include_once('pages/tournoi.inc.php');
+	break;
 
 default : 	include_once('pages/accueil.inc.php');
 }
