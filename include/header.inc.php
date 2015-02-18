@@ -6,6 +6,7 @@
 
 	<meta http-equiv="content-type" content="text/html"/>
     <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery-min.js"></script>
     <script type="text/javascript" src="js/fonctions.js"></script>
 
 	<?php $title=""; ?>

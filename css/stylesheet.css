@@ -4,18 +4,40 @@
     margin-bottom: 10px;
     text-decoration: none;
     transition-duration: 1s;
+    padding: auto;
 }
 
 .jeux p {
     color: #05054d;
     margin-bottom: 0;
-    margin-top: -5px;
     background-color: #659bb7;
 }
 
 .jeux img{
     width : 150px;
     height : 150px;
+    display: block;
+    margin: auto;
+}
+
+.jeux .solo{
+    width : 100px;
+    height : 100px;
+    position: absolute;
+    display: block;
+    margin-top: -150px;
+    margin-left: -20px;
+    text-align: center;
+}
+
+.jeux .multi{
+    width : 100px;
+    height : 100px;
+    position: absolute;
+    display: block;
+    margin-top: -150px;
+    margin-left: 100px;
+    text-align: center;
 }
 
 p {
