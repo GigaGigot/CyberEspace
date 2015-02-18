@@ -4,18 +4,24 @@
 
 <head>
 
-	<meta http-equiv="content-type" content="text/html"/>
+    <meta http-equiv="content-type" content="text/html" />
     <meta charset="utf-8">
     <script type="text/javascript" src="js/fonctions.js"></script>
+    <script src="../jquery.orgchart.js"></script>
+    <script>
+        $(function () {
+            $("#organisation").orgChart({
+                container: $("#main")
+            });
+        });
+    </script>
 
-	<?php $title=""; ?>
-	<title>
-		<?php echo $title; ?>
-	</title>
+    <?php $title="" ; ?>
+    <title>
+        <?php echo $title; ?>
+    </title>
 
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 </head>
 
 <body>
-	
-
