@@ -10,7 +10,7 @@ foreach($jeux as $jeu){
     ?>
 <a class="jeux" href="">
     <?php
-    echo "<img alt='icone d'un jeux' src='image/jeu".$jeu->getJeu_id().".png'>";
+    echo "<img class='jeux' alt='icone d'un jeux' src='image/jeu".$jeu->getJeu_id().".png'>";
     echo "<p>".$jeu->getJeu_intitule()."</p>";
     ?>
 </a>
