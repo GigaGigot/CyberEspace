@@ -3,13 +3,13 @@
 if(empty($_POST['pseudo']) && empty($_POST['pass']))
 {
 ?>
-<form method="post" action="index.php?page=1">
+<form method="post" action="index.php?page=0">
     <p>
-       <label for="pseudo">Nom d'utilisateur </label>
-       <input type="text" name="pseudo" id="pseudo" />
-       <br/>
-       <label for="pass">Mot de passe </label>
-       <input type="password" name="pass" id="pass" />
+        <label for="pseudo">Nom d'utilisateur </label>
+        <input type="text" name="pseudo" id="pseudo" />
+        <br/>
+        <label for="pass">Mot de passe </label>
+        <input type="password" name="pass" id="pass" />
         <br/>
         <input type="submit" value="Valider">
    </p>
@@ -29,7 +29,10 @@ if(empty($_POST['pseudo']) && empty($_POST['pass']))
         if($utilisateur->getPseudo() == $login){
             if($utilisateur->getMdp() == $password){
                 $_SESSION['user'] = $utilisateur;
-                //echo "<p>Vous êtes bien connecté</p>";
+                    echo "<div class='co'>";
+                    echo "<p>Vous êtes bien connecté</p>";
+                    echo "<a href=index.php?page=1>Accéder au catalogue</a>";
+                    echo "</div>";
             }
         }
     }
