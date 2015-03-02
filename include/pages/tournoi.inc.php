@@ -1,4 +1,4 @@
-<form>
+<form name="tournoi" method="post">
     <table>
         <tr>
             <td>Date</td>
@@ -17,6 +17,41 @@
         </tr>
 
         <tr>
+            <td>Jeu</td>
+            <td colspan="2">
+                <select name="jeuChoisi" onchange="NbJoueurs(this.value)">
+                    <option value="0">...</option>
+                    <option value="Bataille Navale">Bataille Navale</option>
+                    <option value="Président">Président</option>
+                    <option value="Belote">Belote</option>
+                    <option value="Monopoly">Monopoly</option>
+                </select>
+            </td>
+        </tr>
+        <script>
+            function NbJoueurs(value) {
+                var joueurs = 0;
+
+                switch ($value) {
+                    case "Bataille Navale":
+                        $joueurs = 2;
+                        break;
+
+                    case "Président":
+                        $joueurs = 4;
+                        break;
+
+                    case "Belote":
+                        $joueurs = 4;
+                        break;
+
+                    case "Monopoly":
+
+                        break;
+                }
+            }
+        </script>
+        <tr>
             <td>Joueur 1</td>
             <td colspan="2">
                 <input type="text" placeholder="Joueur 1" name="joueur1" id="joueur1">
@@ -31,15 +66,9 @@
         </tr>
 
         <tr>
-            <td>Jeu</td>
-            <td colspan="2">
-                <select name="jeuChoisi">
-                    <option value="1">Jeu 1</option>
-                    <option value="2">Jeu 2</option>
-                    <option value="3">Jeu 3</option>
-                </select>
+            <td colspan="3">
+                <input type="submit" value="Enregistrer une partie">
             </td>
         </tr>
-
     </table>
 </form>
