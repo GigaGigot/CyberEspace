@@ -4,7 +4,7 @@ $(document).ready(function() {
                         $(".jeux").on('mouseover',grossissement);
                         $(".jeux").on('mouseout',reduction);
                         $(".jeux").on('click' ,option);
-                    });
+});
 
 function grossissement(){
      $(this).css('width','200px');

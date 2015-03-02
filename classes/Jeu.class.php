@@ -4,6 +4,8 @@ class Jeu{
 	private $intitule;
 	private $solo;
 	private $multi;
+    private $adresse;
+    private $cout;
 	
 	public function __construct($valeurs = array()){
 		if(!empty($valeurs)){
@@ -18,6 +20,8 @@ class Jeu{
 				case 'intitule' : $this->setJeu_intitule($valeur); break;
 				case 'solo' : $this->setJeu_solo($valeur); break;
 				case 'multi' : $this->setJeu_multi($valeur); break;
+                case 'aresse' : $this->setJeu_adresse($valeur); break;
+                case 'cout' : $this->setJeu_cout($valeur); break;
 			}
 		}
 	}
@@ -37,6 +41,14 @@ class Jeu{
 	public function setJeu_multi($valeur){
 		$this->multi = $valeur;
 	}
+    
+    public function setJeu_adresse($valeur){
+		$this->adresse = $valeur;
+	}
+    
+    public function setJeu_cout($valeur){
+		$this->cout = $valeur;
+	}
 	
 	public function getJeu_id(){
 		return $this->id;
@@ -52,5 +64,13 @@ class Jeu{
     
 	public function getJeu_multi(){
 		return $this->multi;
+	}
+    
+    public function getJeu_adresse(){
+		return $this->adresse;
+	}
+    
+    public function getJeu_cout(){
+		return $this->cout;
 	}
 }

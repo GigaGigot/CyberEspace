@@ -9,13 +9,6 @@
     <script type="text/javascript" src="js/jquery-min.js"></script>
     <script type="text/javascript" src="js/fonctions.js"></script>
     <script src="../jquery.orgchart.js"></script>
-    <!--<script>
-        $(function () {
-            $("#organisation").orgChart({
-                container: $("#main")
-            });
-        });
-    </script> -->
 
     <?php $title="" ; ?>
     <title>
