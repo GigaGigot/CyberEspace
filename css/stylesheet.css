@@ -98,6 +98,7 @@ label {
     color: white;
 }
 
+<<<<<<< HEAD
 /* DEBUT calendrier JS : jsSimpleDatePickr */
 #calendarMain1, #calendarMain2{
     margin-left: 20%;
@@ -203,3 +204,32 @@ form {
 table {
     align-items: center;
 }
+=======
+iframe{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/master
