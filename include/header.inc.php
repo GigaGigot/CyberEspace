@@ -8,7 +8,6 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="js/jquery-min.js"></script>
     <script type="text/javascript" src="js/fonctions.js"></script>
-<<<<<<< HEAD
     <script type="text/javascript" src="js/jsSimpleDatePickr.js"></script>
     <script type="text/javascript" src="js/jsSimpleDatePickrInit.js"></script>
     <!--<script>
@@ -18,9 +17,6 @@
             });
         });
     </script> -->
-=======
-    <script src="../jquery.orgchart.js"></script>
->>>>>>> origin/master
 
     <?php $title="" ; ?>
     <title>

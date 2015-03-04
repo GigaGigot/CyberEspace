@@ -21,6 +21,6 @@ function reduction(){
 }
 
 function option(){
-    $(this).children(".solo").toggle();
-    $(this).children(".multi").toggle();
+    $(this).children(".solo").slideToggle();
+    $(this).children(".multi").slideToggle();
 }
