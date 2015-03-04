@@ -1,26 +1,26 @@
-var estClique = false;
-
 $(document).ready(function() {
-                        $(".jeux").on('mouseover',grossissement);
-                        $(".jeux").on('mouseout',reduction);
-                        $(".jeux").on('click' ,option);
+    $(".jeux").on('mouseover',grossissement);
+    $(".jeux").on('mouseleave',reduction);
+    
+    $(".jeux").children(".solo").hide();
+    $(".jeux").children(".multi").hide();
+    
+    $(".jeux").click(option);
 });
 
 function grossissement(){
-     $(this).css('width','200px');
-     $(this).css('height','200px');
-
+     $(this).children("img").css('width','200px');
+     $(this).children("img").css('height','200px');
 }
 
 function reduction(){
-    if(estClique == false){
-        $(this).css('width','150px');
-        $(this).css('height','150px');
-    }
+    $(this).children("img").css('width','150px');
+    $(this).children("img").css('height','150px');
+    $(".jeux").children(".solo").hide();
+    $(".jeux").children(".multi").hide();
 }
 
 function option(){
-    estClique = true;
-    $(this).append("<input class='solo' type='sumbit' value='Solo' onclick=\"location.href='index.php?page=3'\">");
-    $(this).append("<input class='multi' type='sumbit' value='Multi' onclick=\"location.href='index.php?page=4'\">")
+    $(this).children(".solo").toggle();
+    $(this).children(".multi").toggle();
 }

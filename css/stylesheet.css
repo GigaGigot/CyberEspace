@@ -1,15 +1,17 @@
 .jeux {
     display: inline-block;
     margin-left: 30px;
-    margin-bottom: 10px;
     text-decoration: none;
-    transition-duration: 1s;
     padding: auto;
+}
+
+.jeux:hover, .jeux .solo:hover, .jeux .multi:hover {
+    cursor: pointer;
 }
 
 .jeux p {
     color: #05054d;
-    margin-bottom: 0;
+    margin-bottom: -5px;
     background-color: #659bb7;
 }
 
@@ -21,28 +23,32 @@
 }
 
 .jeux .solo{
-    width : 100px;
-    height : 100px;
+    width : 94px;
+    height : 19px;
     position: absolute;
     display: block;
-    margin-top: -150px;
-    margin-left: -20px;
+    margin-top: -39px;
+    margin-left: 0;
     text-align: center;
 }
 
 .jeux .multi{
-    width : 100px;
-    height : 100px;
+    width : 94px;
+    height : 19px;
     position: absolute;
     display: block;
-    margin-top: -150px;
-    margin-left: 100px;
+    margin-top: -39px;
+    margin-left: 101px;
     text-align: center;
+}
+
+.jeu {
+    transition-duration: 1s; 
 }
 
 p {
     text-align: center;
-    margin-top: 15%;
+    margin-top: 25px;
     color: white;
 }
 
@@ -65,14 +71,6 @@ h1 {
 
 .co{
     text-align: center;   
-}
-.jeu {
-    position : absolute;
-    width: 45%;
-    height: 78%;
-    margin-left: 2%;
-    border-radius: 10%;
-    background-color: rgba(255,255,255,0.5);
 }
 
 .chat {
@@ -98,7 +96,6 @@ label {
     color: white;
 }
 
-<<<<<<< HEAD
 /* DEBUT calendrier JS : jsSimpleDatePickr */
 #calendarMain1, #calendarMain2{
     margin-left: 20%;
@@ -204,7 +201,7 @@ form {
 table {
     align-items: center;
 }
-=======
+
 iframe{
     height: 100%;
     width: 100%;
