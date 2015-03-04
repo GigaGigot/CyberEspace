@@ -14,8 +14,8 @@ function grossissement(){
 }
 
 function reduction(){
-    $(this).children("img").css('width','150px');
-    $(this).children("img").css('height','150px');
+    $(this).children("img").css('width','170px');
+    $(this).children("img").css('height','170px');
     $(".jeux").children(".solo").hide();
     $(".jeux").children(".multi").hide();
 }

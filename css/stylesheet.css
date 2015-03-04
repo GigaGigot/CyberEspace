@@ -15,44 +15,44 @@
 }
 
 .jeux p {
-    color: #05054d;
+    color: #3c3c58;
+    font-family: 'prstart', serif;
+    font-size: 10px;
     margin-bottom: -5px;
-    background-color: #659bb7;
+    padding: 5px;
+    background-color: #dce3e6;
     border-radius: 5px;
+    border: 3px double #313853;
 }
 
 .jeux img{
-    width : 150px;
-    height : 150px;
+    width : 170px;
+    height : 170px;
     display: block;
     margin: auto;
+    border: 1px solid #313853;
 }
 
 .jeux input{
-    color: #05054d;
-    background-color: #adcfe0;
-    border-color: cornflowerblue;
+    width : 92px;
+    height : 17px;
+    position: absolute;
+    display: block;
+    margin-top: -46px;
+    text-align: center;
+    color: #dce3e6;
+    font-family: 'prstart', serif; 
+    background-color: rgba(85, 85, 116, 0.9);
+    border-color: #313853;
     border-radius: 5px;
 }
 
 .jeux .solo{
-    width : 94px;
-    height : 19px;
-    position: absolute;
-    display: block;
-    margin-top: -39px;
-    margin-left: 0;
-    text-align: center;
+    margin-left: 1px;
 }
 
 .jeux .multi{
-    width : 94px;
-    height : 19px;
-    position: absolute;
-    display: block;
-    margin-top: -39px;
-    margin-left: 101px;
-    text-align: center;
+    margin-left: 102px;
 }
 
 .jeu {
