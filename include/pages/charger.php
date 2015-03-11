@@ -8,7 +8,9 @@
     $db = new Mypdo();
     $messageManager = new MessageManager($db);
 
-    $liste = $messageManager->getAllMessages();
+    $salon = $_SESSION['id'];
+
+    $liste = $messageManager->getAllMessages($salon);
 
     foreach($liste as $mess){
         echo "[".$mess->getPseudo()."] ".$mess->getMessage()."<br/>";
