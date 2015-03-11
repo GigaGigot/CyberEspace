@@ -90,22 +90,22 @@ h1 {
 }
 
 .chat {
+    border: 3px #888888 ridge;
     position: absolute;
     width: 46%;
     margin-left: 50%;
     height: 40%;
     margin-top: -1%;
-    border-radius: 5%;
     background-color: rgba(145, 133, 133, 0.5);
 }
 
 .boutik {
+    border: 3px #888888 ridge;
     position: absolute;
     width: 46%;
     margin-left: 50%;
-    margin-top: 18%;
-    height: 35%;
-    border-radius: 5%;
+    margin-top: 20%;
+    height: 30%;
     background-color: rgba(145, 133, 133, 0.5);
 }
 
@@ -226,11 +226,11 @@ label {
 /* FIN calendrier JS : jsSimpleDatePickr */
 
 form {
+    border: 3px #888888 ridge;
     display: inline-block;
     align-content: center;
     margin: 10px;
     padding: 10px;
-    border-radius: 5%;
     background-color: rgba(255, 255, 255, 0.5);
 }
 

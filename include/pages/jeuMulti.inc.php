@@ -1,20 +1,26 @@
 <h1>Le coin des gens qui aiment jouer ensemble</h1>
 
-<div class="jeu"></div>
-    <div class="chat">
-        <div id="afficheMessage" style="overflow: auto; max-height: 100px">
-        </div>
-        
-        <hr/>
-        <form id="form">
-            Votre message : <br/><textarea id="saisieMessage" name="saisieMessage"></textarea></br>
-            <input type="button" id="btnTchat" value="Envoyer">
-        </form>
+<div class="affichage_jeu"></div>
+<div class="chat">
+    <div id="afficheMessage" style="overflow: auto; max-height: 100px">
     </div>
+
+    <hr/>
+    <form id="form" action="javascript:void(0);">
+        Votre message : <br/><textarea id="saisieMessage" name="saisieMessage"></textarea></br>
+        <input type="button" id="btnTchat" value="Envoyer">
+    </form>
+</div>
 <div class="boutik"></div>
 
 <script>
     $(document).ready(function(){
+        $('#saisieMessage').on('keyup', function(e) {
+             if (e.which === 13) {
+                 e.preventDefault();
+                 $('#btnTchat').trigger('click');
+             }
+        });
         
         function charger(){
             //e.preventDefault();
