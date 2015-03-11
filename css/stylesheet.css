@@ -97,3 +97,22 @@ h1 {
 label {
     color: white;
 }
+
+#saisieMessage {
+    width : 600px;
+    height: 100px;
+    margin-left: 10%;
+}
+
+#btnTchat {
+    margin-left: 30%;
+}
+
+#afficheMessage {
+    height: 45%;
+    padding-left: 20%;
+}
+
+.envoi {
+    
+}
