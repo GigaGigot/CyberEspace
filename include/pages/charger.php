@@ -13,8 +13,4 @@
     foreach($liste as $mess){
         echo "[".$mess->getPseudo()."] ".$mess->getMessage()."<br/>";
     }
-
-    if (sizeof($liste) > 7){
-        unset($liste[0]);   
-    }
 ?>

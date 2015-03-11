@@ -6,9 +6,9 @@
         </div>
         
         <hr/>
-        <form>
+        <form id="form">
             Votre message : <br/><textarea id="saisieMessage" name="saisieMessage"></textarea></br>
-            <input id="btnTchat" value="Envoyer">
+            <input type="button" id="btnTchat" value="Envoyer">
         </form>
     </div>
 <div class="boutik"></div>
@@ -38,6 +38,7 @@
                         alert(message);
                     }
                 });
+                $("#afficheMessage").scrollTop($("#afficheMessage")[0].scrollHeight);
             }
                     charger();
                 }, 100);
