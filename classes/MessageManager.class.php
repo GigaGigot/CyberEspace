@@ -7,9 +7,10 @@ class MessageManager{
 	}
 	
     public function add($message){
-		$requete = $this->db->prepare('insert into message(pseudo, message) values (:pseudo, :message);');
+		$requete = $this->db->prepare('insert into message(pseudo, message, salon) values (:pseudo, :message, :salon);');
 		$requete->bindValue(':pseudo', $message->getPseudo());
         $requete->bindValue(':message',$message->getMessage());
+        $requete->bindValue(':salon',$message->getSalon());
 		
 		$retour=$requete->execute();
 		return $retour;
@@ -17,7 +18,7 @@ class MessageManager{
     
     public function getAllMessages(){
         $listeMessage = array();
-		$sql = 'SELECT * FROM message';
+		$sql = 'SELECT * FROM message WHERE salon = 1';
 		$req = $this->db->prepare($sql);
 		$req->execute();
 		

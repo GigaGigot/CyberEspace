@@ -11,6 +11,7 @@
 
     $message = new Message();
     $message->setPseudo('Jack');
+    $message->setSalon(1);
 
     $message->setmessage($_POST['message']);
     
