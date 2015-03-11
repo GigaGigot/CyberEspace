@@ -8,7 +8,8 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="js/jquery-min.js"></script>
     <script type="text/javascript" src="js/fonctions.js"></script>
-    <script src="../jquery.orgchart.js"></script>
+    <script type="text/javascript" src="js/jsSimpleDatePickr.js"></script>
+    <script type="text/javascript" src="js/jsSimpleDatePickrInit.js"></script>
     <!--<script>
         $(function () {
             $("#organisation").orgChart({
