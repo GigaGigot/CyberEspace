@@ -10,7 +10,9 @@
     padding: auto;
 }
 
-.jeux:hover, .jeux .solo:hover, .jeux .multi:hover {
+.jeux:hover,
+.jeux .solo:hover,
+.jeux .multi:hover {
     cursor: pointer;
 }
 
@@ -25,39 +27,39 @@
     border: 3px double #313853;
 }
 
-.jeux img{
-    width : 170px;
-    height : 170px;
+.jeux img {
+    width: 170px;
+    height: 170px;
     display: block;
     margin: auto;
     border: 1px solid #313853;
 }
 
-.jeux input{
-    width : 94px;
-    height : 17px;
+.jeux input {
+    width: 94px;
+    height: 17px;
     position: absolute;
     display: block;
     margin-top: -46px;
     text-align: center;
     color: #dce3e6;
-    font-family: 'prstart', serif; 
+    font-family: 'prstart', serif;
     background-color: rgba(85, 85, 116, 0.9);
     border-color: #313853;
     border-radius: 5px;
 }
 
-.jeux .solo{
+.jeux .solo {
     margin-left: 1px;
 }
 
-.jeux .multi{
+.jeux .multi {
     margin-left: 102px;
 }
 
 .jeu {
     border-radius: 5px;
-    transition-duration: 1s; 
+    transition-duration: 1s;
 }
 
 p {
@@ -74,17 +76,17 @@ body {
 h1 {
     font-family: 'prstart', serif;
     font-size: 50px;
-    color : #232b36;
+    color: #232b36;
     text-align: center;
 }
 
-#utilisateur{
-    position : absolute;
-    margin : -4% 90%;
+#utilisateur {
+    position: absolute;
+    margin: -4% 90%;
 }
 
-.co{
-    text-align: center;   
+.co {
+    text-align: center;
 }
 
 .chat {
@@ -93,7 +95,7 @@ h1 {
     margin-left: 50%;
     height: 40%;
     border-radius: 5%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .boutik {
@@ -103,40 +105,22 @@ h1 {
     margin-top: 22%;
     height: 35%;
     border-radius: 5%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 label {
     color: white;
 }
-
-<<<<<<< HEAD
-#saisieMessage {
-    width : 600px;
-    height: 100px;
-    margin-left: 10%;
-}
-
-#btnTchat {
-    margin-left: 30%;
-}
-
-#afficheMessage {
-    height: 45%;
-    padding-left: 20%;
-}
-
-.envoi {
-    
-}
-=======
 /* DEBUT calendrier JS : jsSimpleDatePickr */
-#calendarMain1, #calendarMain2{
+
+#calendarMain1,
+#calendarMain2 {
     margin-left: 20%;
     display: inline;
 }
 /* conteneur calendrier */
-.calendarWrap{
+
+.calendarWrap {
     display: none;
     position: absolute;
     z-index: 1000;
@@ -144,6 +128,7 @@ label {
     padding: 5px 10px 10px 10px;
     background-color: #2e373f;
     /*background-color: rgba(46, 55, 63, 0.95);*/
+    
     border-radius: 10px;
     -moz-box-shadow: 0 0 10px #555;
     -webkit-box-shadow: 0 0 10px #555;
@@ -151,7 +136,9 @@ label {
     font-size: 12px;
 }
 /* bouton d'affichage*/
-#calendarMain1 > input, #calendarMain2 > input{
+
+#calendarMain1 > input,
+#calendarMain2 > input {
     display: block;
     width: 100px;
     height: 22px;
@@ -161,51 +148,62 @@ label {
     border-radius: 5px;
     border: none;
 }
-#calendarMain1 > input:hover, #calendarMain2 > input:hover{
+
+#calendarMain1 > input:hover,
+#calendarMain2 > input:hover {
     background-color: #2673cb;
 }
 /* navigation dans le calendrier */
-.calendarWrap ul{
+
+.calendarWrap ul {
     margin: 5px 0 10px 0;
     padding: 0;
 }
-.calendarWrap li{
+
+.calendarWrap li {
     margin: 0;
     padding: 0;
     width: 20px;
     display: inline-block;
     *display: inline;
 }
-.calendarWrap li.calendarTitle{
+
+.calendarWrap li.calendarTitle {
     width: 170px;
     color: #ccc;
     text-align: center;
 }
-.calendarWrap li input{
+
+.calendarWrap li input {
     width: 20px;
     background-color: #5d6f7f;
     border: none;
     color: #fff;
 }
-.calendarWrap li input:hover{
+
+.calendarWrap li input:hover {
     background-color: #6f8598;
 }
 /* calendrier */
-.jsCalendar{
+
+.jsCalendar {
     color: #fff;
     border-collapse: collapse;
 }
-.jsCalendar th{
+
+.jsCalendar th {
     color: #8ba7bf;
     font-size: 16px;
     font-weight: normal;
     text-align: center;
 }
-.jsCalendar td{
+
+.jsCalendar td {
     padding: 0;
     border: none;
 }
-.jsCalendar a{
+
+.jsCalendar a {
     display: block;
     width: 30px;
     padding: 3px 0 3px 0;
@@ -214,15 +212,18 @@ label {
     text-decoration: none;
     text-align: center;
 }
-.jsCalendar .day:hover a{
+
+.jsCalendar .day:hover a {
     background-color: #2673cb;
     border-color: #2673cb;
 }
-.jsCalendar .selectedDay a{
+
+.jsCalendar .selectedDay a {
     background-color: #c44d38;
     border-color: #c44d38;
 }
 /* FIN calendrier JS : jsSimpleDatePickr */
+
 form {
     display: inline-block;
     align-content: center;
@@ -236,32 +237,7 @@ table {
     align-items: center;
 }
 
-iframe{
+iframe {
     height: 100%;
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> origin/master
->>>>>>> 312897dc8c313110c2293bf2692953ce4f35aa58
