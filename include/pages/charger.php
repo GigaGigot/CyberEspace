@@ -10,11 +10,7 @@
 
     $liste = $messageManager->getAllMessages();
 
-    if (sizeof($liste) > 7){
-        unset($liste[0]);   
-    }
-
     foreach($liste as $mess){
-        echo "[".$mess->getPseudo()."] = ".$mess->getMessage()."<br/>";
+        echo "[".$mess->getPseudo()."] ".$mess->getMessage()."<br/>";
     }
 ?>

@@ -2,13 +2,13 @@
 
 <div class="jeu"></div>
     <div class="chat">
-        <div id="afficheMessage">
+        <div id="afficheMessage" style="overflow: auto; max-height: 100px">
         </div>
         
         <hr/>
-        <form>
+        <form id="form">
             Votre message : <br/><textarea id="saisieMessage" name="saisieMessage"></textarea></br>
-            <input id="btnTchat" value="Envoyer">
+            <input type="button" id="btnTchat" value="Envoyer">
         </form>
     </div>
 <div class="boutik"></div>
@@ -38,6 +38,7 @@
                         alert(message);
                     }
                 });
+                $("#afficheMessage").scrollTop($("#afficheMessage")[0].scrollHeight);
             }
                     charger();
                 }, 100);
@@ -47,7 +48,7 @@
         function ecrire(){
             //e.preventDefault();
  
-                    var pseudo = encodeURIComponent( $('#pseudo').val());
+                var pseudo = encodeURIComponent( $('#pseudo').val());
                 var message = encodeURIComponent( $('#message').val());
 
             if(pseudo != "" && message != ""){

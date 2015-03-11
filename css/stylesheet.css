@@ -94,18 +94,19 @@ h1 {
     width: 46%;
     margin-left: 50%;
     height: 40%;
+    margin-top: -1%;
     border-radius: 5%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(145, 133, 133, 0.5);
 }
 
 .boutik {
     position: absolute;
     width: 46%;
     margin-left: 50%;
-    margin-top: 22%;
+    margin-top: 18%;
     height: 35%;
     border-radius: 5%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(145, 133, 133, 0.5);
 }
 
 label {
@@ -240,4 +241,17 @@ table {
 iframe {
     height: 100%;
     width: 100%;
+}
+#afficheMessage {
+    padding-left: 5%;
+    padding-right: 5%;
+    height : 45%;
+}
+
+#saisieMessage {
+    width : 98%;
+}
+
+#form {
+    width : 92%;
 }
