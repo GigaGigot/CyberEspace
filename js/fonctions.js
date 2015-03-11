@@ -1,3 +1,5 @@
+var num;
+
 $(document).ready(function () {
     $(".jeux").on('mouseover', grossissement);
     $(".jeux").on('mouseleave', reduction);
@@ -53,3 +55,7 @@ function getCookie(sName) {
        
     return "erreur";
 }
+
+
+
+

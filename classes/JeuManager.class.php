@@ -16,17 +16,18 @@ class JeuManager{
 			$listeJeux[] = new Jeu($jeu);
 		}
 		$req->closeCursor();
-		return $listeJeux;
 		
+		return $listeJeux;	
 	}
 	
 	public function getJeuByID($id){
+		$jeuRecherche = array();
 		$req = $this->db->prepare('SELECT * FROM jeu WHERE id = :id');
 		$req->bindValue(':id', $id);
 		$nom = $req->execute();
 		
 		while($jeu = $req->fetch(PDO::FETCH_OBJ)){
-			$jeuRecherche = new Jeu($jeu);
+			$jeuRecherche[] = new Jeu($jeu);
 		}
 		$req->closeCursor();
 			

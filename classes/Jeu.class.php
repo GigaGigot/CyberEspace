@@ -20,7 +20,7 @@ class Jeu{
 				case 'intitule' : $this->setJeu_intitule($valeur); break;
 				case 'solo' : $this->setJeu_solo($valeur); break;
 				case 'multi' : $this->setJeu_multi($valeur); break;
-                case 'aresse' : $this->setJeu_adresse($valeur); break;
+                case 'adresse' : $this->setJeu_adresse($valeur); break;
                 case 'cout' : $this->setJeu_cout($valeur); break;
 			}
 		}
