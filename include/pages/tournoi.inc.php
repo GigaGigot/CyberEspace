@@ -1,5 +1,5 @@
 <form name="tournoi" method="post">
-    <table>
+    <table id="formulaire">
         <tr>
             <td>Date</td>
             <td>
@@ -89,36 +89,65 @@
         
         <script>
             function NbJoueursReels(value){
-                for(var i = 0; i < value; i++){
+                for(var i = 0; i < value - 1; i++){
+                    var numCorrige = i+1;
                     var tr = document.createElement("tr");
                     var label = document.createElement("td");
-                    label.appendChild(document.createTextNode("Joueur " + i));
+                    label.appendChild(document.createTextNode("Joueur " + numCorrige));
+                    
                     var td2 = document.createElement("td");
-                    var input = document.createElement("input"); // TODO
-                    input.setAttribute("id", ("joueur"+i));
+                    
+                    var input = document.createElement("input");
+                    input.setAttribute("id", ("joueur"+numCorrige));
+                    input.setAttribute("name", ("joueur"+numCorrige));
+                    input.setAttribute("type", "text");
+                    input.setAttribute("placeholder", ("Joueur "+ numCorrige));
+                    
+                    td2.appendChild(input);
+                    
+                    tr.appendChild(label);
+                    tr.appendChild(td2);
+                    
+                    document.getElementById("formulaire").appendChild(tr);
                 }
+                
+                // dernier joueur avec affichage du bouton
+                var tr = document.createElement("tr");
+                var label = document.createElement("td");
+                label.appendChild(document.createTextNode("Joueur " + value));
+
+                var td2 = document.createElement("td");
+
+                var input = document.createElement("input");
+                input.setAttribute("id", ("joueur"+value));
+                input.setAttribute("name", ("joueur"+value));
+                input.setAttribute("type", "text");
+                input.setAttribute("placeholder", ("Joueur "+ value));
+                input.setAttribute("onchange", "creationBouton()");
+
+                td2.appendChild(input);
+
+                tr.appendChild(label);
+                tr.appendChild(td2);
+
+                document.getElementById("formulaire").appendChild(tr);
+            }
+            
+            function creationBouton(){
+                var bouton = document.createElement("input");
+                bouton.setAttribute("type", "submit");
+                bouton.setAttribute("value", "Enregistrer la partie");
+                
+                var container = document.createElement("td");
+                container.setAttribute("colspan", 3);
+                container.setAttribute("id", "validation");
+                container.appendChild(bouton);
+                
+                var tr = document.createElement("tr");
+                tr.appendChild(container);
+                
+                document.getElementById('formulaire').appendChild(tr);            
             }
         </script>
-        
-        </div id="joueurs">
-        <tr>
-            <td>Joueur 1</td>
-            <td colspan="2">
-                <input type="text" placeholder="Joueur 1" name="joueur1" id="joueur1">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Joueur 2</td>
-            <td colspan="2">
-                <input type="text" placeholder="Joueur 2" name="joueur2" id="joueur2">
-            </td>
-        </tr>
-
-        <tr>
-            <td colspan="3">
-                <input type="submit" value="Enregistrer une partie">
-            </td>
-        </tr>
     </table>
 </form>
