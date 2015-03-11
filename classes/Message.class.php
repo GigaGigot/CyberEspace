@@ -3,6 +3,7 @@ class Message{
 	private $id;
 	private $pseudo;
 	private $message;
+    private $salon;
 	
 	public function __construct($valeurs = array()){
 		if(!empty($valeurs)){
@@ -32,6 +33,10 @@ class Message{
 		$this->message = $valeur;
 	}
 	
+    public function setSalon($salon){
+        $this->salon = $salon;   
+    }
+    
 	public function getId(){
 		return $this->id;
 	}
@@ -43,4 +48,8 @@ class Message{
 	public function getMessage(){
 		return $this->message;
 	}
+    
+    public function getSalon(){
+        return $this->salon;   
+    }
 }
