@@ -13,6 +13,9 @@
     $message->setPseudo('Jack');
 
     $message->setmessage($_POST['message']);
+    
+    if ($message->getMessage() != ""){
 
-    $liste = $messageManager->add($message);
+        $liste = $messageManager->add($message);
+    }
 ?>

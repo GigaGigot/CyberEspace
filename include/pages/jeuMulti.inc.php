@@ -2,7 +2,7 @@
 
 <div class="jeu"></div>
     <div class="chat">
-        <div id="afficheMessage">
+        <div id="afficheMessage" style="overflow: auto; max-height: 100px">
         </div>
         
         <hr/>
@@ -47,7 +47,7 @@
         function ecrire(){
             //e.preventDefault();
  
-                    var pseudo = encodeURIComponent( $('#pseudo').val());
+                var pseudo = encodeURIComponent( $('#pseudo').val());
                 var message = encodeURIComponent( $('#message').val());
 
             if(pseudo != "" && message != ""){
