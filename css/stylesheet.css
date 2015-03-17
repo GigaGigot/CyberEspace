@@ -66,6 +66,7 @@
     position: absolute;
     width: 45%;
     height: 75%;
+    margin-left: 2%;
 }
 
 p {
@@ -107,8 +108,8 @@ h1 {
     
     position: absolute;
     width: 45%;
-    margin-left: 50%;
     height: 40%;
+    margin-left: 50%;
     margin-top: 0%;
 }
 
