@@ -254,8 +254,8 @@ table {
 }
 
 iframe {
-    height: 800px;
-    width: 800px;
+    height: 100%;
+    width: 100%;
 }
 #afficheMessage {
     padding-left: 5%;
