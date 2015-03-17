@@ -6,7 +6,7 @@
 	$jeux = $jeuManager->getJeuByID($_SESSION['id']);
 	
 	foreach($jeux as $jeu){
-		echo "<div class='jeu'> <iframe src=".$jeu->getJeu_adresse()."></iframe></div>";
+		echo "<div class='game'> <iframe src=".$jeu->getJeu_adresse()."></iframe></div>";
 	}
 ?>
 
