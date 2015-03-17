@@ -17,6 +17,7 @@ class Message{
 				case 'id' : $this->setId($valeur); break;
 				case 'pseudo' : $this->setPseudo($valeur); break;
 				case 'message' : $this->setMessage($valeur); break;
+                case 'salon' : $this->setSalon($valeur); break;
 			}
 		}
 	}
