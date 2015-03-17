@@ -64,8 +64,8 @@
 
 .game{
     position: absolute;
-    width: 800px;
-    height: 800px;
+    width: 48%;
+    height: 78%;
 }
 
 p {
