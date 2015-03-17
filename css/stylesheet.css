@@ -58,11 +58,14 @@
 }
 
 .jeu {
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+.game{
     position: absolute;
     width: 800px;
     height: 800px;
-    border-radius: 5px;
-    transition-duration: 1s;
 }
 
 p {
