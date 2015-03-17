@@ -28,7 +28,7 @@
         <input type="button" id="btnTchat" value="Envoyer">
     </form>
 </div>
-<div class="boutik"></div>
+<div class="boutik"><iframe></iframe></div>
 
 <script>
     $(document).ready(function(){

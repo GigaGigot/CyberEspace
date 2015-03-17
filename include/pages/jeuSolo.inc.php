@@ -16,5 +16,4 @@
 	}
 ?>
 
-<div class="chat"></div>
-<div class="boutik"></div>
+<div class="boutik"><iframe></iframe></div>
