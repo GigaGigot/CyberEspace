@@ -3,7 +3,7 @@
 if(empty($_POST['pseudo']) && empty($_POST['pass']))
 {
 ?>
-<form method="post" action="index.php?page=0" id="co">
+<form class="formConnexion"method="post" action="index.php?page=0" id="co">
     <p>
         <label for="pseudo">Nom d'utilisateur </label>
         <input type="text" name="pseudo" id="pseudo" />

@@ -6,7 +6,7 @@
     </div>
 
     <hr/>
-    <form id="form" action="javascript:void(0);">
+    <form class="formChat" id="form" action="javascript:void(0);">
         Votre message : <br/><textarea id="saisieMessage" name="saisieMessage"></textarea></br>
         <input type="button" id="btnTchat" value="Envoyer">
     </form>
