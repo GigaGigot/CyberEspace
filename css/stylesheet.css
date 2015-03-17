@@ -65,7 +65,7 @@
 p {
     text-align: center;
     margin-top: 25px;
-    color: white;
+    color: black;
 }
 
 body {
@@ -123,7 +123,7 @@ h1 {
 }
 
 label {
-    color: white;
+    color: black;
 }
 /* DEBUT calendrier JS : jsSimpleDatePickr */
 
@@ -266,4 +266,9 @@ iframe {
 
 #form {
     width : 92%;
+}
+
+#co {
+    margin-left: 35%;
+    margin-top: 10%;
 }
