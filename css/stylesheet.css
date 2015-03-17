@@ -268,7 +268,7 @@ th, td{
     padding: 10px;
 }
 
-#formulaire table {
+#formulaire{
     align-items: center;
     border: 3px solid black;
     border-radius: 15px;
