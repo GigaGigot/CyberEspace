@@ -9,7 +9,7 @@
     $messageManager = new MessageManager($db);
     $id = $_SESSION['id'];
 
-    $liste = $messageManager->getAllMessages($id);
+    $liste = $messageManager->getAllMessages();
 
     foreach($liste as $mess){
         echo "[".$mess->getPseudo()."] ".$mess->getMessage()."<br/>";

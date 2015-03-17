@@ -1,0 +1,6 @@
+{"action":"newJoueur",
+  "joueur":{
+    "idJoueur":1,
+    "pseudo":"moi"
+  }
+}

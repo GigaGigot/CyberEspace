@@ -11,7 +11,7 @@
 
     $message = new Message();
     $message->setPseudo('Jack');
-    $message->setSalon(1);
+    $message->setSalon($_SESSION['id']);
 
     $message->setmessage($_POST['message']);
     

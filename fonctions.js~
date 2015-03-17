@@ -1,0 +1,73 @@
+<<<<<<< HEAD
+var estClique = false;
+var num;
+
+$(document).ready(function() {
+    $(".jeux").on('mouseover',grossissement);
+    $(".jeux").on('mouseleave',reduction);
+    
+=======
+$(document).ready(function () {
+    $(".jeux").on('mouseover', grossissement);
+    $(".jeux").on('mouseleave', reduction);
+>>>>>>> 543239be60f9f8515da78bfa7720ce9bb45c2fc3
+    $(".jeux").children(".solo").hide();
+    $(".jeux").children(".multi").hide();
+    $(".jeux").click(option);
+});
+
+function grossissement() {
+    $(this).children("img").css('width', '200px');
+    $(this).children("img").css('height', '200px');
+}
+
+function reduction() {
+    $(this).children("img").css('width', '170px');
+    $(this).children("img").css('height', '170px');
+    $(".jeux").children(".solo").hide();
+    $(".jeux").children(".multi").hide();
+}
+
+<<<<<<< HEAD
+function option(){
+    estClique = true;
+    $(this).append("<input class='solo' type='sumbit' value='Solo' onclick=\"location.href='index.php?page=3'\">");
+    $(this).append("<input class='multi' type='sumbit' value='Multi' onclick=\"location.href='index.php?page=4'\">");
+}
+
+function recupId(id){
+    num = id;
+    //alert(num);
+    setCookie('id',id);
+    alert(getCookie('id'));
+}
+
+function setCookie(sName, sValue) {
+        var today = new Date(), expires = new Date();
+        expires.setTime(today.getTime() + (365*24*60*60*1000));
+        document.cookie = sName + "=" + encodeURIComponent(sValue) + ";expires=" + expires.toGMTString();
+}
+
+function getCookie(sName) {
+    var cookContent = document.cookie, cookEnd, i, j;
+    var sName = sName + "=";
+    
+    for (i=0, c=cookContent.length; i<c; i++) {
+        j = i + sName.length;
+        if (cookContent.substring(i, j) == sName) {
+            cookEnd = cookContent.indexOf(";", j);
+            if (cookEnd == -1) {
+                cookEnd = cookContent.length;
+            }
+            return decodeURIComponent(cookContent.substring(j, cookEnd));
+        }
+    }       
+       
+    return "erreur";
+}
+=======
+function option() {
+    $(this).children(".solo").slideToggle();
+    $(this).children(".multi").slideToggle();
+}
+>>>>>>> 543239be60f9f8515da78bfa7720ce9bb45c2fc3

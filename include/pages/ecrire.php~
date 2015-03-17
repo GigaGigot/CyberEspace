@@ -7,11 +7,17 @@
     session_start();
     $db = new Mypdo();
     $messageManager = new MessageManager($db);
-    $id = $_SESSION['id'];
+    $user = $_SESSION['user'];
+   
 
-    $liste = $messageManager->getAllMessages($id);
+    $message = new Message();
+    $message->setPseudo('Jack');
+    $message->setSalon($_SESSION['id']);
 
-    foreach($liste as $mess){
-        echo "[".$mess->getPseudo()."] ".$mess->getMessage()."<br/>";
+    $message->setmessage($_POST['message']);
+    
+    if ($message->getMessage() != ""){
+
+        $liste = $messageManager->add($message);
     }
 ?>
