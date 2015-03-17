@@ -1,5 +1,6 @@
 <?php
-class Partie{
+class Partie
+{
 	private $id;
     private $date;
 	private $jeu;
@@ -14,9 +15,12 @@ class Partie{
 		}
 	}
 	
-	public function affecte($donnees){
-		foreach($donnees as $attribut => $valeur){
-			switch($attribut){
+	public function affecte($donnees)
+    {
+		foreach($donnees as $attribut => $valeur)
+        {
+			switch($attribut)
+            {
 				case 'id' : $this->setPartie_id($valeur); break;
 				case 'jeu' : $this->setPartie_jeu($valeur); break;
 				case 'date' : $this->setPartie_date($valeur); break;
@@ -26,7 +30,6 @@ class Partie{
                 case 'joueur4' : $this->setPartie_joueur4($valeur); break;
 			}
 		}
-        if($this->joueur3 == 
 	}
     
     public function setPartie_id($valeur){
@@ -72,5 +75,6 @@ class Partie{
     public function getPartie_joueur4(){
         return $this->joueur4;
     }
+}
     
 ?>

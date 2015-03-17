@@ -14,7 +14,7 @@
     </div>
 
     <hr/>
-    <form id="form" action="javascript:void(0);">
+    <form class="formChat" id="form" action="javascript:void(0);">
         Votre message : <br/><textarea id="saisieMessage" name="saisieMessage"></textarea></br>
         <input type="button" id="btnTchat" value="Envoyer">
     </form>
@@ -63,9 +63,9 @@
             //e.preventDefault();
  
                 var pseudo = encodeURIComponent( $('#pseudo').val());
-                var message = encodeURIComponent( $('#message').val());
+                var message = encodeURIComponent( $('#saisieMessage').val());
 
-            if(pseudo != "" && message != ""){
+            if(pseudo != "" && message != "" && message != "%0A"){
                 $.ajax({
                     url : "include/pages/ecrire.php",
                     type : "POST",

@@ -1,16 +1,19 @@
 <?php
+    session_start();
+    
     include('../../classes/Mypdo.class.php');
     include('../../classes/MessageManager.class.php');
     include('../../classes/Message.class.php');
+    include('../../classes/Utilisateur.class.php');
     include('../config.inc.php');
 
-    session_start();
     $db = new Mypdo();
     $messageManager = new MessageManager($db);
-    $user = $_SESSION['user'];
+    
+    $user = $_SESSION['pseudo'];
 
     $message = new Message();
-    $message->setPseudo('Jack');
+    $message->setPseudo($user);
     $message->setSalon($_SESSION['id']);
 
     $message->setmessage($_POST['message']);

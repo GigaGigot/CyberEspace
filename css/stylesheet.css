@@ -218,6 +218,12 @@ label {
     text-align: center;
 }
 
+th, td{
+    margin: 15px;
+    padding: 5px;
+}
+
+
 .jsCalendar td {
     padding: 0;
     border: none;
@@ -244,7 +250,15 @@ label {
 }
 /* FIN calendrier JS : jsSimpleDatePickr */
 
-form {
+.formConnexion {
+    border: 3px #888888 ridge;
+    display: inline-block;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formChat {
     border: 3px #888888 ridge;
     display: inline-block;
     align-content: center;
@@ -254,6 +268,9 @@ form {
 
 table {
     align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.67);
 }
 
 iframe {
