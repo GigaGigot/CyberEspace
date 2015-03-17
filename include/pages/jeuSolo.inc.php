@@ -9,5 +9,6 @@
 		echo "<div class='jeu'> <iframe src=".$jeu->getJeu_adresse()."></iframe></div>";
 	}
 ?>
+
 <div class="chat"></div>
 <div class="boutik"></div>
