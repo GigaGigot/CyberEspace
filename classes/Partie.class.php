@@ -26,14 +26,51 @@ class Partie{
                 case 'joueur4' : $this->setPartie_joueur4($valeur); break;
 			}
 		}
+        if($this->joueur3 == 
 	}
     
-    public function setPartie_id($valeur){}
-    public function setPartie_id($valeur){}
-    public function setPartie_id($valeur){}
-    public function setPartie_id($valeur){}
-    public function setPartie_id($valeur){}
-    public function setPartie_id($valeur){}
-    public function setPartie_id($valeur){}
+    public function setPartie_id($valeur){
+        $this->id = $valeur;
+    }
+    public function setPartie_jeu($valeur){
+        $this->jeu = $valeur;
+    }
+    public function setPartie_date($valeur){
+        $this->date = $valeur;
+    }
+    public function setPartie_joueur1($valeur){
+        $this->joueur1 = $valeur;
+    }
+    public function setPartie_joueur2($valeur){
+        $this->joueur2 = $valeur;
+    }
+    public function setPartie_joueur3($valeur){
+        $this->joueur3 = $valeur;
+    }
+    public function setPartie_joueur4($valeur){
+        $this->joueur4 = $valeur;
+    }
+    
+    public function getPartie_id(){
+        return $this->id;
+    }
+    public function getPartie_jeu(){
+        return $this->jeu;
+    }
+    public function getPartie_date(){
+        return $this->date;
+    }
+    public function getPartie_joueur1(){
+        return $this->joueur1;
+    }
+    public function getPartie_joueur2(){
+        return $this->joueur2;
+    }
+    public function getPartie_joueur3(){
+        return $this->joueur3;
+    }
+    public function getPartie_joueur4(){
+        return $this->joueur4;
+    }
     
 ?>
