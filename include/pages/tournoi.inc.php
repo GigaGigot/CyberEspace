@@ -180,3 +180,5 @@
         <td>'.$partie->getPartie_joueur4().'</td>
     </tr>'); } ?>
 </table>
+
+<a href="http://localhost/cyberespace/index.php?page=1">Retour à l'accueil</a>
