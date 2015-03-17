@@ -16,15 +16,9 @@ class MessageManager{
 		return $retour;
 	}
     
-<<<<<<< HEAD
-    public function getAllMessages($id){
-        $listeMessage = array();
-		$sql = 'SELECT * FROM message WHERE salon = '.$id;
-=======
     public function getAllMessages($salon){
         $listeMessage = array();
 		$sql = 'SELECT * FROM message WHERE salon = '.$salon;
->>>>>>> origin/master
 		$req = $this->db->prepare($sql);
 		$req->execute();
 		
