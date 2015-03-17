@@ -29,7 +29,7 @@ foreach($jeux as $jeu){
     ?>
 <div class="jeux">
     <?php
-        echo "<img class='jeux' alt='icone d'un jeux' src='image/jeu".$jeu->getJeu_id().".png'>";
+        echo "<img class='jeu' alt='icone d'un jeux' src='image/jeu".$jeu->getJeu_id().".png'>";
         echo "<p onmouseover=recupId(".$jeu->getJeu_id().") onclick='passerID()' >".$jeu->getJeu_intitule()."</p>";
     ?>
     <input class='solo' id='solo' type='sumbit' value='Solo' onclick="location.href='index.php?page=3'" onclick="passerID()" >
