@@ -1,6 +1,15 @@
-<h1>Le coin des gens qui aiment jouer ensemble</h1>
+<?php session_start(); ?>
+<h1>Jeu multi</h1>
 
-<div class="affichage_jeu"></div>
+<?php
+	$db = new Mypdo();
+	$jeuManager = new JeuManager($db);
+	$jeux = $jeuManager->getJeuByID($_SESSION['id']);
+	
+	foreach($jeux as $jeu){
+		echo "<div class='game'> <iframe src=".$jeu->getJeu_adresse()."></iframe></div>";
+	}
+?>
 <div class="chat">
     <div id="afficheMessage" style="overflow: auto; max-height: 100px">
     </div>

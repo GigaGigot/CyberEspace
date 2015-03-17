@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<h1>Le coin des sans-amis</h1>
+<h1>Jeu solo</h1>
 <?php
 	$db = new Mypdo();
 	$jeuManager = new JeuManager($db);
