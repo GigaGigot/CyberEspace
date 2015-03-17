@@ -16,8 +16,8 @@
     $message->setPseudo($user);
     $message->setSalon($_SESSION['id']);
 
-    $message->setmessage($_POST['message']);
-    
+    $message->setMessage($_POST['message']);
+
     if ($message->getMessage() != ""){
 
         $liste = $messageManager->add($message);

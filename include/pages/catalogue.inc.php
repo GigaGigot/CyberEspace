@@ -36,6 +36,9 @@ echo "<div class='jeux' onmouseover=recupId(".$jeu->getJeu_id().") onclick='pass
 <?php
 }
 ?>
+<h1>Programme des parties</h1>
+
+<p><a href="index.php?page=2">Accéder au programme</a></p>
 
 
 
