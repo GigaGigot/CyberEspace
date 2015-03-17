@@ -1,9 +1,15 @@
 <h1>Le coin des gens qui aiment jouer ensemble</h1>
 
 <?php
+    session_start();
 	$db = new Mypdo();
 	$jeuManager = new JeuManager($db);
 	$jeux = $jeuManager->getJeuByID($_SESSION['id']);
+
+    $utilisateurManager = new UtilisateurManager($db);
+    $user = $_SESSION['user'];
+    $user->setCredit($user->getCredit()-1);
+    $utilisateurManager->updateCreditUtilisateur($user);
 	
 	foreach($jeux as $jeu){
 		echo "<div class='game'> <iframe src=".$jeu->getJeu_adresse()."></iframe></div>";

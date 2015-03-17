@@ -19,5 +19,13 @@ class UtilisateurManager{
 
 		return $listeUtilisateurs;
 	}
+    
+    public function updateCreditUtilisateur($utilisateur){
+		$requete = $this->db->prepare('update utilisateur set credit=:credit where idUtilisateur=:id');
+		$requete->bindValue(':credit', $utilisateur->getCredit());
+        $requete->bindValue(':id', $utilisateur->getId());
+		
+		$retour=$requete->execute();
+	}
 }
 ?>
