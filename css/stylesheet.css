@@ -252,6 +252,7 @@ th, td{
 
 .formConnexion {
     border: 3px #888888 ridge;
+    background-color: rgba(178, 181, 191, 0.65);
     display: inline-block;
     align-content: center;
     margin: 10px;
@@ -260,13 +261,14 @@ th, td{
 
 .formChat {
     border: 3px #888888 ridge;
+    background-color: rgba(178, 181, 191, 0.65);
     display: inline-block;
     align-content: center;
     margin: 10px;
     padding: 10px;
 }
 
-table {
+#formulaire{
     align-items: center;
     border: 3px solid black;
     border-radius: 15px;
