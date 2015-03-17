@@ -161,7 +161,7 @@
 <a href="http://localhost/cyberespace/index.php?page=2">Retour à l'ajout de partie</a>
 <?php } ?>
 <h1>Parties enregistrées</h1>
-<table>
+<table id="parties">
     <tr>
         <th>Jeu</th>
         <th>Date</th>
