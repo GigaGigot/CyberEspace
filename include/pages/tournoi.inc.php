@@ -1,9 +1,17 @@
+<?php 
+
+    $db = new Mypdo();
+    $jm = new JeuManager($db);
+    $pm = new PartieManager($db);
+
+if(!isset($_POST['jeu'])){
+    ?>
 <form name="tournoi" method="post">
     <table id="formulaire">
         <tr>
             <td>Date</td>
             <td>
-                <input type="text" value="" name="date2" id="champ_date2" size="12" maxlength="10">
+                <input type="text" value="" name="date" id="champ_date2" size="12" maxlength="10">
             </td>
             <td>
 
@@ -19,7 +27,7 @@
         <tr>
             <td>Jeu</td>
             <td colspan="2">
-                <select name="jeuChoisi" onchange="NbJoueursMax(this.value)">
+                <select name="jeu" onchange="NbJoueursMax(this.value)">
                     <option value="0" selected="selected">...</option>
                     <option value="1">Bataille Navale</option>
                     <option value="2">Président</option>
@@ -151,3 +159,48 @@
         </script>
     </table>
 </form>
+            <?php
+}else{
+    
+    $jeux = $jm->getJeuByID($_POST['jeu']);
+    foreach($jeux as $jeu){
+        $intitule = $jeu->getJeu_intitule();
+    }
+        
+    $nvellePartie = new Partie($_POST);
+    $nvellePartie->setPartie_date($_POST['date']);
+    $nvellePartie->setPartie_jeu($intitule);
+    $pm->add($nvellePartie);
+    
+        ?>
+<h2>Enregistrement de partie de 
+    <?php
+        echo $intitule;
+ ?></h2>
+<a href="http://localhost/cyberespace/index.php?page=2">Retour à l'ajout de partie</a>
+<?php
+}
+   ?>
+<h1>Parties enregistrées</h1>
+<table>
+    <tr>
+        <th>Jeu</th>
+        <th>Date</th>
+        <th>Joueur 1</th>
+        <th>Joueur 2</th>
+        <th>Joueur 3</th>
+        <th>Joueur 4</th>
+    </tr>
+    <?php
+    $listeParties = $pm->getAllParties();
+    foreach($listeParties as $partie){
+        echo (
+            '<tr><td>'.$partie->getPartie_jeu().'</td>
+            <td>'.$partie->getPartie_date().'</td>
+            <td>'.$partie->getPartie_joueur1().'</td>
+            <td>'.$partie->getPartie_joueur2().'</td>
+            <td>'.$partie->getPartie_joueur3().'</td>
+            <td>'.$partie->getPartie_joueur4().'</td></tr>');
+    }
+?>
+</table>
