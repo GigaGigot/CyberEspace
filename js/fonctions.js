@@ -29,7 +29,7 @@ function recupId(id){
     num = id;
     //alert(num);
     setCookie('id',id);
-    alert(getCookie('id'));
+    //alert(getCookie('id'));
 }
 
 function setCookie(sName, sValue) {

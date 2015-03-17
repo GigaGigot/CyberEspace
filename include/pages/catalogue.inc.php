@@ -8,7 +8,7 @@
                 type : "POST",
                 data : "&id=" + num,
                 success : function(data){
-                   alert(data);
+                   console.log(data);
                 },
                 error : function(xhr,exception,message){
                     alert('Erreur');
@@ -29,8 +29,8 @@ foreach($jeux as $jeu){
     ?>
 <div class="jeux">
     <?php
-        echo "<img class='jeux' alt='icone d'un jeux' src='image/jeu".$jeu->getJeu_id().".png' onclick=recupId(".$jeu->getJeu_id().") >";
-        echo "<p onclick='passerID()'>".$jeu->getJeu_intitule()."</p>";
+        echo "<img class='jeux' alt='icone d'un jeux' src='image/jeu".$jeu->getJeu_id().".png'>";
+        echo "<p onmouseover=recupId(".$jeu->getJeu_id().") onclick='passerID()' >".$jeu->getJeu_intitule()."</p>";
     ?>
     <input class='solo' id='solo' type='sumbit' value='Solo' onclick="location.href='index.php?page=3'" onclick="passerID()" >
     <input class='multi' id='multi' type='sumbit' value='Multi' onclick="location.href='index.php?page=4'" onclick="passerID()" > 
