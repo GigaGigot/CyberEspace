@@ -3,16 +3,30 @@
 if(empty($_POST['pseudo']) && empty($_POST['pass']))
 {
 ?>
-<form class="formConnexion"method="post" action="index.php?page=0" id="co">
-    <p>
+<form class="formConnexion" method="post" action="index.php?page=0" id="co">
+    <table>
+    <tr>
+        <td>
         <label for="pseudo">Nom d'utilisateur </label>
+        </td>
+        <td>
         <input type="text" name="pseudo" id="pseudo" />
-        <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
         <label for="pass">Mot de passe </label>
+        </td>   
+        <td>
         <input type="password" name="pass" id="pass" />
-        <br/>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
         <input type="submit" value="Valider">
-   </p>
+        </td>
+    </tr>   
+    </table>
 </form>
 <?php
 }else{
