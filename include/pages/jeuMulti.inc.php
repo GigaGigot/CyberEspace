@@ -2,8 +2,8 @@
 <h1>Jeu multi</h1>
 
 <?php
-<<<<<<< HEAD
-    session_start();
+
+    
 	$db = new Mypdo();
 	$jeuManager = new JeuManager($db);
 	$jeux = $jeuManager->getJeuByID($_SESSION['id']);
@@ -12,11 +12,7 @@
     $user = $_SESSION['user'];
     $user->setCredit($user->getCredit()-1);
     $utilisateurManager->updateCreditUtilisateur($user);
-=======
-	$db = new Mypdo();
-	$jeuManager = new JeuManager($db);
-	$jeux = $jeuManager->getJeuByID($_SESSION['id']);
->>>>>>> 9145ed065214fc3cc8eba9fb0383900887b9a6a8
+
 	
 	foreach($jeux as $jeu){
 		echo "<div class='game'> <iframe src=".$jeu->getJeu_adresse()."></iframe></div>";
