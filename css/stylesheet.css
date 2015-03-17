@@ -64,8 +64,13 @@
 
 .game{
     position: absolute;
+<<<<<<< HEAD
     width: 48%;
     height: 78%;
+=======
+    width: 45%;
+    height: 75%;
+>>>>>>> 9145ed065214fc3cc8eba9fb0383900887b9a6a8
 }
 
 p {
@@ -106,10 +111,10 @@ h1 {
 
     
     position: absolute;
-    width: 46%;
+    width: 45%;
     margin-left: 50%;
     height: 40%;
-    margin-top: -1%;
+    margin-top: 0%;
 }
 
 .boutik {
@@ -122,9 +127,9 @@ h1 {
     box-shadow: inset 0px 0px 25px 5px #b3b2b2;
     
     position: absolute;
-    width: 46%;
+    width: 45%;
     margin-left: 50%;
-    margin-top: 20%;
+    margin-top: 22%;
     height: 30%;
 }
 
@@ -264,8 +269,8 @@ th, td{
     background-color: rgba(178, 181, 191, 0.65);
     display: inline-block;
     align-content: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 2%;
+    padding: 1%;
 }
 
 #formulaire{
@@ -293,7 +298,7 @@ iframe {
 }
 
 #saisieMessage {
-    width : 98%;
+    width : 100%;
 }
 
 #form {
