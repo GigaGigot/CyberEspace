@@ -55,9 +55,9 @@
             //e.preventDefault();
  
                 var pseudo = encodeURIComponent( $('#pseudo').val());
-                var message = encodeURIComponent( $('#message').val());
+                var message = encodeURIComponent( $('#saisieMessage').val());
 
-            if(pseudo != "" && message != ""){
+            if(pseudo != "" && message != "" && message != "%0A"){
                 $.ajax({
                     url : "include/pages/ecrire.php",
                     type : "POST",
